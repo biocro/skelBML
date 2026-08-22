@@ -23,6 +23,8 @@ for the next release.
 
 - Removed `Makevars.win` since it is no longer needed
 
+- Fixed `format-security` compiler warnings
+
 # Changes in skelBML version 2.2.0
 
 - Several changes were made to better comply with CRAN policies and to better
