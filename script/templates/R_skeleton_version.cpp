@@ -22,7 +22,7 @@ SEXP R_skeleton_version()
         string_vector result = {skeleton_version};
         return r_string_vector_from_vector(result);
     } catch (std::exception const& e) {
-        Rf_error("%s", (string("Caught exception in R_skeleton_version: ") + e.what()).c_str());
+        Rf_error("%2$s", (string("Caught exception in R_skeleton_version: ") + e.what()).c_str());
     } catch (...) {
         Rf_error("Caught unhandled exception in R_skeleton_version.");
     }
