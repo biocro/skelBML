@@ -158,7 +158,7 @@ write_file_from_template <- function(source, destination) {
     on.exit(close(file))
 
     ## suppressWarnings: not all "templates" have conversion specifiers
-    processed_text <- suppressWarnings(sprintf(template_text, package_name))
+    processed_text <- suppressWarnings(sprintf(template_text, package_name, '%s'))
 
     ## ensure target directory exists
     dir.create(dirname(destination), recursive = TRUE, showWarnings = FALSE)
